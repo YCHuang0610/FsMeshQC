@@ -29,13 +29,13 @@ FsMeshQC is a specialized tool for analyzing and assessing the quality of cortic
 ### Using pip
 
 ```bash
-pip install git+https://github.com/ychunhuang/FsMeshQC.git
+pip install git+https://github.com/YCHuang0610/FsMeshQC.git
 ```
 
 ### From source
 
 ```bash
-git clone https://github.com/ychunhuang/FsMeshQC.git
+git clone https://github.com/YCHuang0610/FsMeshQC.git
 cd FsMeshQC
 pip install -e .
 ```
@@ -114,7 +114,7 @@ This project is licensed under the GNU License - see the LICENSE file for detail
 
 ## Author
 
-- **ychunhuang** - [GitHub](https://github.com/ychunhuang) - ychunhuang@foxmail.com
+- **ychunhuang** - [GitHub](https://github.com/YCHuang0610) - ychunhuang@foxmail.com
 
 ## Citation
 
@@ -122,4 +122,5 @@ If you use this tool in your research, please cite:
 ```
 FsMeshQC: A FreeSurfer Mesh Quality Control Tool
 Author: ychunhuang
-URL: https://github.com/ychunhuang/FsMeshQC
+URL: https://github.com/YCHuang0610/FsMeshQC
+```
