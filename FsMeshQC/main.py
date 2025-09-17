@@ -19,20 +19,18 @@ FsMeshQC - FreeSurfer网格质量控制工具
 用法示例:
 --------
 基本用法:
-    python main.py -i /path/to/lh.white
+    python -m FsMeshQC -i /path/to/lh.white
 
 指定输出位置:
-    python main.py -i /path/to/rh.pial -o ./results/rh_pial_quality
+    python -m FsMeshQC -i /path/to/rh.pial -o ./results/rh_pial_quality
 
 仅查看摘要，不保存文件:
-    python main.py -i /path/to/lh.white --summary-only
+    python -m FsMeshQC -i /path/to/lh.white --summary-only
 
 调整质量阈值:
-    python main.py -i /path/to/lh.white --bad-sq-thresh 0.15 --bad-angle-thresh 8.0
+    python -m FsMeshQC -i /path/to/lh.white --bad-sq-thresh 0.15 --bad-angle-thresh 8.0
 
 作者: ychunhuang
-版本: 0.1.0
-许可证: MIT
 """
 
 import argparse
@@ -40,9 +38,9 @@ import os
 import sys
 import numpy as np
 from pathlib import Path
-from utils.fs_io import read_freesurfer_surf
-from utils.meshQuality import compute_mesh_quality, summarize_quality
-from utils.saveResults import save_mesh_quality
+from .utils.fs_io import read_freesurfer_surf
+from .utils.meshQuality import compute_mesh_quality, summarize_quality
+from .utils.saveResults import save_mesh_quality
 
 
 def parse_arguments():
@@ -203,7 +201,3 @@ def main():
         bad_sq_thresh=args.bad_sq_thresh,
         bad_minangle_thresh=args.bad_angle_thresh
     )
-
-
-if __name__ == "__main__":
-    main()

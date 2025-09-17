@@ -1,5 +1,5 @@
 import numpy as np
-from utils.geometric_calculation import (
+from .geometric_calculation import (
     triangle_edges, triangle_area_from_edges,
     triangle_angles, triangle_inradius, triangle_circumradius
 )
