@@ -131,7 +131,14 @@ def parse_arguments():
         action="store_true"
     )
 
-    return parser.parse_args()
+    args = parser.parse_args()
+    
+    # 如果没有提供输入文件，显示帮助并退出
+    if args.input_surf is None:
+        parser.print_help()
+        sys.exit(0)
+        
+    return args
 
 
 def main():

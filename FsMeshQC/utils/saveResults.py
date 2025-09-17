@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 import numpy as np
 import pandas as pd
-from meshQuality import summarize_quality
+from .meshQuality import summarize_quality
 
 
 def save_mesh_quality(

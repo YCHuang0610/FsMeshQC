@@ -9,7 +9,7 @@ setup(
     long_description_content_type="text/markdown",
     author="ychunhuang", 
     author_email="ychunhuang@foxmail.com", 
-    url="https://github.com/ychunhuang/FsMeshQC",
+    url="https://github.com/YCHuang0610/FsMeshQC",
     install_requires=[
         "numpy",
         "nibabel",
